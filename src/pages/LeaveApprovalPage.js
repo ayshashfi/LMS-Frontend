@@ -39,7 +39,7 @@ const LeaveApprovalPage = () => {
     const fetchLeaveRequests = async () => {
       try {
         const response = await axios.get(
-          'http://127.0.0.1:8000/api/leave/manager/leave-requests/',
+          'https://lmssolutions.xyz/api/leave/manager/leave-requests/',
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem('access_token')}`,
@@ -62,7 +62,7 @@ const LeaveApprovalPage = () => {
     if (selectedLeave) {
       try {
         await axios.patch(
-          `http://127.0.0.1:8000/api/leave/manager/update-leave/${selectedLeave.id}/`,
+          `https://lmssolutions.xyz/api/leave/manager/update-leave/${selectedLeave.id}/`,
           { status: selectedLeave.status },
           {
             headers: {

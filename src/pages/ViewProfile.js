@@ -31,7 +31,7 @@ const ViewProfile = () => {
     useEffect(() => {
         const fetchUserProfile = async () => {
             try {
-                const response = await axios.get('http://127.0.0.1:8000/api/accounts/profile/', {
+                const response = await axios.get('https://lmssolutions.xyz/api/accounts/profile/', {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('access_token')}`,
                     },
@@ -63,7 +63,7 @@ const ViewProfile = () => {
 
         try {
             const response = await axios.put(
-                'http://127.0.0.1:8000/api/accounts/profile/update/',
+                'https://lmssolutions.xyz/api/accounts/profile/update/',
                 formData,
                 {
                     headers: {

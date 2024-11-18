@@ -3,7 +3,7 @@ import refreshToken from './refreshToken';
 import { useNavigate } from 'react-router-dom';
 
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:8000/api/', 
+    baseURL: 'https://lmssolutions.xyz/api/', 
     headers: {
         'Content-Type': 'application/json',
         

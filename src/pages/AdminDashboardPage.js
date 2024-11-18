@@ -36,7 +36,7 @@ const AdminDashboardPage = () => {
     const token = localStorage.getItem("access_token");
   
     try {
-      const response = await axios.get("http://localhost:8000/api/accounts/users/", {
+      const response = await axios.get("https://lmssolutions.xyz/api/accounts/users/", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -60,7 +60,7 @@ const AdminDashboardPage = () => {
     const token = localStorage.getItem("access_token"); // Get the token
 
     try {
-      await axios.patch(`http://localhost:8000/api/accounts/users/${userId}/block-unblock/`, {}, {
+      await axios.patch(`https://lmssolutions.xyz/api/accounts/users/${userId}/block-unblock/`, {}, {
         headers: {
           Authorization: `Bearer ${token}`, // Attach the token
         },

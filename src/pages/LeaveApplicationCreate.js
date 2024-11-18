@@ -46,7 +46,7 @@ const LeaveApplicationCreate = () => {
   const fetchRemainingLeaveDays = async () => {
     try {
       const response = await axios.get(
-        'http://127.0.0.1:8000/api/leave/remaining-leaves/', 
+        'https://lmssolutions.xyz/api/leave/remaining-leaves/', 
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('access_token')}`,
@@ -116,7 +116,7 @@ const LeaveApplicationCreate = () => {
   
     try {
       await axios.post(
-        'http://127.0.0.1:8000/api/leave/create/',
+        'https://lmssolutions.xyz/api/leave/create/',
         leaveData,
         {
           headers: {

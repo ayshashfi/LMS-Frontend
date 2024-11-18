@@ -30,7 +30,7 @@ const EmployeeDashboardPage = () => {
 
     try {
       const response = await axios.get(
-        "http://localhost:8000/api/leave/list", 
+        "https://lmssolutions.xyz/api/leave/list", 
         {
           headers: {
             Authorization: `Bearer ${token}`,

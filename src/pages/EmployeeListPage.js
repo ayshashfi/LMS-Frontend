@@ -17,7 +17,7 @@ const EmployeeListPage = () => {
       setError(null);
       try {
         const token = localStorage.getItem('access_token');
-        const response = await axios.get('http://127.0.0.1:8000/api/accounts/employees/department/', {
+        const response = await axios.get('https://lmssolutions.xyz/api/accounts/employees/department/', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

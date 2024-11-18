@@ -12,7 +12,7 @@
                     useEffect(() => {
                       const fetchRemainingLeaveDays = async () => {
                         try {
-                          const response = await axios.get('http://127.0.0.1:8000/api/leave/remaining-leaves/', {
+                          const response = await axios.get('https://lmssolutions.xyz/api/leave/remaining-leaves/', {
                             headers: {
                               Authorization: `Bearer ${localStorage.getItem('access_token')}`,
                             },
@@ -26,7 +26,7 @@
                       const fetchLeaveApplications = async () => {
                         try {
                           const response = await axios.get(
-                            'http://127.0.0.1:8000/api/leave/list/', 
+                            'https://lmssolutions.xyz/api/leave/list/', 
                             {
                               headers: {
                                 'Authorization': `Bearer ${localStorage.getItem('access_token')}`,

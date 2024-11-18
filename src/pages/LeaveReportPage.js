@@ -19,7 +19,7 @@ const LeaveReportPage = () => {
   const fetchLeaveReports = async () => {
     try {
       const response = await axios.get(
-        'http://127.0.0.1:8000/api/leave/total-leaves-report/',
+        'https://lmssolutions.xyz/api/leave/total-leaves-report/',
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('access_token')}`,
