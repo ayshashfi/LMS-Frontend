@@ -27,7 +27,7 @@ function RegisterPage() {
 
   useEffect(() => {
     // Fetch departments from the API
-    axiosInstance.get("accounts/departments/").then((response) => {
+    axios.get("'https://lmssolutions.xyz/api/accounts/departments/'").then((response) => {
       setDepartments(response.data); 
     });
   }, []);
