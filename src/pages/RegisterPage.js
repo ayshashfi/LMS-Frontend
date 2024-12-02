@@ -28,7 +28,7 @@ function RegisterPage() {
   useEffect(() => {
     // Fetch departments from the API
     axiosInstance.get("accounts/departments/").then((response) => {
-      setDepartments(response.data); // Assuming response is [{ id, name }]
+      setDepartments(response.data); 
     });
   }, []);
 
